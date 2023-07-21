@@ -36,8 +36,8 @@ runs:
     - name: Mention to slack
       uses: abeyuya/actions-mention-to-slack@v2
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_TOLDEV }}
+        repo-token: ${{ inputs.repo-token }}
+        slack-webhook-url: ${{ inputs.slack-webhook-url }}
         configuration-path: https://raw.githubusercontent.com/jp-apollo-project/actions-mention-to-slack/main/mention-to-slack.yml
         icon-url: https://img.icons8.com/color/256/000000/github-2.png
         bot-name: "Githubお知らせ君"
