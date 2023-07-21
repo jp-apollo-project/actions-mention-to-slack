@@ -38,7 +38,7 @@ runs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_TOLDEV }}
-        configuration-path: mention-to-slack.yml
+        configuration-path: https://raw.githubusercontent.com/jp-apollo-project/actions-mention-to-slack/main/mention-to-slack.yml
         icon-url: https://img.icons8.com/color/256/000000/github-2.png
         bot-name: "Githubお知らせ君"
         run-id: ${{ github.run_id }}
